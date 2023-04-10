@@ -1,5 +1,7 @@
 --[Made by ThroughTheFireAndFlames#9925]--
 
+      print("Loaded🎉")
+   
 --[I allow you to skid this 🫵🤡🎉🎉🎉]--
 repeat task.wait() until game:IsLoaded();
 local humanoid = game.Players.LocalPlayer.Character.Humanoid;
