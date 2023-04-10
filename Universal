@@ -1,0 +1,16 @@
+--[Made by ThroughTheFireAndFlames#9925]--
+
+--[I allow you to skid this 🫵🤡🎉🎉🎉]--
+repeat task.wait() until game:IsLoaded();
+local humanoid = game.Players.LocalPlayer.Character.Humanoid;
+local currentHealth = humanoid.Health;
+humanoid.HealthChanged:Connect(function(health)
+	if (health >= currentHealth) then
+		return;
+	end
+	local change = math.abs(currentHealth - health);
+	for i = 1, getgenv().Repeat do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame * CFrame.new(getgenv().Cframe[1], getgenv().Cframe[2], getgenv().Cframe[3]);
+	end
+	currentHealth = health;
+end);
